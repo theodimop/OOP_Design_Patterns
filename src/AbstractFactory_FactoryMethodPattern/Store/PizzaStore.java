@@ -12,10 +12,14 @@ public abstract class PizzaStore {
         //Through polymorphism this invokes createPizza() in NewYorkPizzaStore or ChicagoPizzaStore
         Pizza pizza = createPizza(type);
 
-        /* Some other possible methods here...*/
+        /* Now that we have created the correct pizza
+        is time to finish it*/
+        /**/
         pizza.prepare();
         pizza.bake();
+        pizza.cut();
         pizza.box();
+
 
         return pizza;
     }

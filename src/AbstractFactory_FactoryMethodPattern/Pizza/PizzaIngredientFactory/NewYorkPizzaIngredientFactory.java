@@ -1,8 +1,9 @@
 package AbstractFactory_FactoryMethodPattern.Pizza.PizzaIngredientFactory;
 
 import AbstractFactory_FactoryMethodPattern.Pizza.Ingridients.*;
+import AbstractFactory_FactoryMethodPattern.Pizza.Ingridients.Abstract.*;
 
-/*Ney orkY Pizza Store needs only to know how they should create Pizza's*/
+/*New York Pizza Store needs only to know how they should create Pizza's*/
 
 public class NewYorkPizzaIngredientFactory implements PizzaIngridientFactory {
     @Override
@@ -14,7 +15,7 @@ public class NewYorkPizzaIngredientFactory implements PizzaIngridientFactory {
     @Override
     public Cheese createCheese(){return new RegianoCheese();}
     @Override
-    public Veggies[] createVeggies(){return new Veggies[0];}
+    public Veggies[] createVeggies(){return new SlicedVeggies[0];}
     @Override
     public Pepperoni createPepperoni(){return new SlicedPepperoni();}
     @Override

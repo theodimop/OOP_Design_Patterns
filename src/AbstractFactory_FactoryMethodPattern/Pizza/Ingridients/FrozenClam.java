@@ -5,5 +5,5 @@ import AbstractFactory_FactoryMethodPattern.Pizza.Ingridients.Abstract.Clam;
 /**
  * Created by theo on 6/24/16.
  */
-public class FreshClam extends Clam {
+public class FrozenClam extends Clam {
 }

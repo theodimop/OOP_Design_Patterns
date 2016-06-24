@@ -1,6 +1,6 @@
 package AbstractFactory_FactoryMethodPattern.Pizza;
 
-import AbstractFactory_FactoryMethodPattern.Pizza.Ingridients.*;
+import AbstractFactory_FactoryMethodPattern.Pizza.Ingridients.Abstract.*;
 
 /**
  * Created by theo on 6/22/16.

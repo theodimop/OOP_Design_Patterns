@@ -1,6 +1,5 @@
 package AbstractFactory_FactoryMethodPattern.Pizza;
 
-import AbstractFactory_FactoryMethodPattern.Pizza.Ingridients.Clam;
 import AbstractFactory_FactoryMethodPattern.Pizza.PizzaIngredientFactory.PizzaIngridientFactory;
 
 /**
