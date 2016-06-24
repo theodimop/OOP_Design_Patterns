@@ -8,7 +8,9 @@ public class NewYorkPizzaIngredientFactory implements PizzaIngridientFactory {
     @Override
     public Sauce createSauce(){ return new MarinaraSauce();}
     @Override
-    public Dough createDough(){return new ThinCrustDough();}
+    public Dough createDough(){
+        System.out.println("Creating New York style dough...");
+        return new ThinCrustDough();}
     @Override
     public Cheese createCheese(){return new RegianoCheese();}
     @Override

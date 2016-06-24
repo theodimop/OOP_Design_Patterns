@@ -13,6 +13,8 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngridientFactory {
 
     @Override
     public Dough createDough() {
+
+        System.out.println("Creating Chicago style dough...");
         return new Dough();
     }
 

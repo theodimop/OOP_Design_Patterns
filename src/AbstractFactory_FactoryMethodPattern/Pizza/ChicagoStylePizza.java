@@ -16,7 +16,7 @@ public class ChicagoStylePizza extends Pizza {
     }
 
     @Override
-    void prepare() {
+    public void prepare() {
 
     }
 }

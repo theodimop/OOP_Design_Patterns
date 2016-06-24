@@ -16,7 +16,7 @@ public class GreekPizza extends Pizza {
         }
 
         @Override
-        void prepare() {
+        public void prepare() {
 
         }
 }

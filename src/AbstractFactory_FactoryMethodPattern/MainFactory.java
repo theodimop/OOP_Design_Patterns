@@ -22,12 +22,15 @@ public class MainFactory {
     public static void main(String args[]){
         PizzaStore nYpizzaStore= new NewYorkPizzaStore();
 
-        Pizza pizza =nYpizzaStore.orderPizza("Local Pizza");
+        Pizza pizza =nYpizzaStore.orderPizza("Cheese");
         pizza.print();
 
         PizzaStore chicagoPizzaStore= new ChicagoPizzaStore();
 
-        pizza= chicagoPizzaStore.orderPizza("Local Pizza");
+        pizza= chicagoPizzaStore.orderPizza("Cheese");
+        pizza.print();
+
+        pizza = chicagoPizzaStore.orderPizza("Clam");
         pizza.print();
 
     }

@@ -1,9 +1,6 @@
 package AbstractFactory_FactoryMethodPattern.Factories;
 
-import AbstractFactory_FactoryMethodPattern.Pizza.CheesePizza;
-import AbstractFactory_FactoryMethodPattern.Pizza.GreekPizza;
-import AbstractFactory_FactoryMethodPattern.Pizza.Pepperoni;
-import AbstractFactory_FactoryMethodPattern.Pizza.Pizza;
+import AbstractFactory_FactoryMethodPattern.Pizza.*;
 
 /**
  * Created by theo on 6/22/16.
@@ -21,16 +18,12 @@ public abstract class SimplePizzaFactory {
 
         switch (type.trim()){
             case "Cheese":
-                return new CheesePizza();
-            case "Greek":
-                return new GreekPizza();
-            case "Pepperoni":
-                return new Pepperoni();
-            //Make the CheesePizza the default pizza
-            default:
-                return new CheesePizza();
+                //return new CheesePizza();
+            case "Clam":
+                //return new ClamPizza();
 
         }
+        return null;
 
     }
 

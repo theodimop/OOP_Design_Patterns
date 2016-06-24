@@ -16,7 +16,7 @@ public class Pepperoni extends Pizza {
     }
 
     @Override
-    void prepare() {
+    public void prepare() {
 
     }
 }
