@@ -7,7 +7,7 @@ import AbstractFactory_FactoryMethodPattern.Pizza.Ingridients.Abstract.*;
  */
 /*Abstract factory pattern:
 *
-* Provides an interface for creating a family of related or dependened objects (here ingredients) without
+* Provides an interface for creating a family of related or dependent objects (here ingredients) without
 * specifying concrete classes*/
 public interface PizzaIngridientFactory {
 

@@ -1,5 +1,6 @@
 package CommandPattern.RemoteControl.RemoteControlTest;
 
+import CommandPattern.RemoteControl.Command;
 import CommandPattern.RemoteControl.ConcreteCommands.*;
 import CommandPattern.RemoteControl.Receivers.CeilingFan;
 import CommandPattern.RemoteControl.Receivers.Garage;
@@ -39,7 +40,7 @@ class MainRemoteControl {
         CeilingFanOnCommand ceilingFanOnCommand=new CeilingFanOnCommand(ceilingFan);
         CeilingFanOffCommand ceilingFanOffCommand=new CeilingFanOffCommand(ceilingFan);
 
-
+/*
         //4 Set the Commands to the Remote Control
         remoteControl.setCommand(0,lightOnCommandBedroom,lightOffCommandBedroom);
         remoteControl.setCommand(1,lightOnCommandKitchen,lightOffCommandKitchen);
@@ -63,8 +64,22 @@ class MainRemoteControl {
         remoteControl.undoButtonWasPushed();
         remoteControl.undoButtonWasPushed();
         remoteControl.undoButtonWasPushed();
+*/
 
-     /*   remoteControl.onButtonWasPushed(4);
+        /*Use the MacroCommand*/
+        Command[] partyOn = { lightOnCommandBedroom,stereoWithCDOnCommand,ceilingFanOnCommand};
+        Command[] partyOff= {lightOffCommandBedroom,stereoWithCDOffCommand,ceilingFanOffCommand};
+        MacroCommand macroPartyOnCommand = new MacroCommand(partyOn);
+        MacroCommand macroPartyOffCommand = new MacroCommand(partyOff);
+
+        remoteControl.setCommand(5,macroPartyOnCommand,macroPartyOffCommand);
+        remoteControl.onButtonWasPushed(5);
+        remoteControl.offButtonWasPushed(5);
+        remoteControl.undoButtonWasPushed();
+
+
+
+            /*   remoteControl.onButtonWasPushed(4);
         remoteControl.onButtonWasPushed(4);
         //remoteControl.offButtonWasPushed(4);
 
