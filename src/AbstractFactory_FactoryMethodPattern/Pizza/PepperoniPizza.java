@@ -4,10 +4,10 @@ package AbstractFactory_FactoryMethodPattern.Pizza;
  * Created by theo on 6/22/16.
  */
 @Deprecated
-public class Pepperoni extends Pizza {
+public class PepperoniPizza extends Pizza {
 
-    public Pepperoni(){
-        name="Pepperoni";
+    public PepperoniPizza(){
+        name="PepperoniPizza";
     }
 
     @Override
