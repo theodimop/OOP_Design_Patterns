@@ -16,5 +16,6 @@ public class MainEnumeratorAdapter {
         enumerationAdapter.next();
         //Throws an Unsopported Operation Exception!
         enumerationAdapter.remove();
+
     }
 }
